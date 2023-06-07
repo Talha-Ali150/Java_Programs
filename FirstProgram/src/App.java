@@ -19,6 +19,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         findAvg(10, 20, 30);
     }
+    
 
     public static void findAvg(int a, int b, int c) {
         int sum = a + b + c;
