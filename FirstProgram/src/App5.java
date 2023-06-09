@@ -7,7 +7,7 @@ public class App5 {
     }
 
     // using while loop
-    public static int[] reverseArray(int[] arr) {
+    public static int[] reverseArray(int[] arr) { 
         int start = 0;
         int end = arr.length - 1;
         while (start < end) {
