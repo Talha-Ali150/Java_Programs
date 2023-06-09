@@ -6,6 +6,7 @@ public class App5 {
         printArray(reverseArray(myArray));
     }
 
+    // using while loop
     public static int[] reverseArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -18,6 +19,18 @@ public class App5 {
         }
         return arr;
     }
+
+    //using for loop
+    // public static int[] reverseArray(int[] arr) {
+    //     int counter = arr.length-1;
+    //     for (int i = 0; i < counter; i++) {
+    //         int temp = arr[i];
+    //         arr[i] = arr[counter];
+    //         arr[counter] = temp;
+    //         counter--;
+    //     }
+    //     return arr;
+    // }
 
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
