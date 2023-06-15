@@ -22,11 +22,11 @@ public class App13 {
         second.next = third;
         third.next = fourth;
 
-        sll.display();
+        sll.findLength();
 
     }
 
-    public void display() {
+    public void findLength() {
         ListNode current = head;
         int count = 0;
         while (current != null) {
