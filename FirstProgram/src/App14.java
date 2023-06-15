@@ -23,14 +23,6 @@ public class App14 {
         third.next = fourth;
 
         sll.display();
-
-        ListNode newNode = new ListNode(9);
-        newNode.next = sll.head;
-        sll.head = newNode;
-        System.out.println();
-
-        sll.display();
-
     }
 
     public void display(){
