@@ -1,15 +1,16 @@
 public class App15 {
     public ListNode head;
 
-    public static class ListNode{
+    public static class ListNode {
         public int data;
         public ListNode next;
 
-        public ListNode(int data){
+        public ListNode(int data) {
             this.data = data;
             this.next = null;
         }
     }
+
     public static void main(String[] args) {
         App15 sll = new App15();
 
@@ -23,19 +24,20 @@ public class App15 {
         third.next = fourth;
 
         sll.display();
-
-        
-        ListNode newNode = new ListNode(9);
-        newNode.next = sll.head;
-        sll.head = newNode;
+        sll.insertFirst(9);
         System.out.println();
-
         sll.display();
     }
-    
-    public void display(){
+
+    public void insertFirst(int n) {
+        ListNode newNode = new ListNode(n);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    public void display() {
         ListNode current = head;
-        while(current != null){
+        while (current != null) {
             System.out.print(" " + current.data);
             current = current.next;
         }
